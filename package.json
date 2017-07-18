@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "coffeescript": "^1.12.7",
+    "global": "^4.3.2",
+    "save": "^2.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "should": "^11.2.1"
+  },
+  "name": "txt_make_menu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w --compilers coffee:coffee-script/register",
+    "start": "(coffee --compile -o dist --watch &);./node_modules/nodemon/bin/nodemon.js ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
